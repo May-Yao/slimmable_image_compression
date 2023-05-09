@@ -23,6 +23,3 @@ If you use our work in your research or wish to refer to the baseline results pu
   volume={11},  
   pages={29946-29958},  
   doi={10.1109/ACCESS.2023.3261668}}  
-# License
-CC 4.0 Attribution-NonCommercial International  
-The software is for educaitonal and academic research purpose only.
