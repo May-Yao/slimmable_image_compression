@@ -1,1 +1,1 @@
-# slimmable_image_compression
+# Slimmable Image Compression for Human and Machine Vision
