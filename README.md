@@ -9,9 +9,14 @@ decision-making while only occasionally requiring human’s scrutiny. However, d
 # Installation
 The codebases are built on top of [CompressAI](https://github.com/InterDigitalInc/CompressAI) , [Slimmabe Networks](https://github.com/JiahuiYu/slimmable_networks) and [YOLOv3](https://github.com/ultralytics/yolov3/tree/master).
 ### Requirements
-
+- Linux or macOS with Python ≥ 3.6    
+- PyTorch ≥ 1.5 and torchvision that matches the PyTorch installation. You can install them together at pytorch.org to make sure of this   
 ### Steps
-1. 
+1. Install and build libs  
+
+2. Load COCO2014 dataset follow here  
+
+3. Train  
 
 # Citing
 If you use our work in your research or wish to refer to the baseline results published here, please use the following BibTeX entries:  
