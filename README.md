@@ -14,19 +14,19 @@ The codebases are built on top of [CompressAI](https://github.com/InterDigitalIn
 ### Steps
 1. Install and build libs  
 ```
-# install 
-git clone 
+git clone https://github.com/May-Yao/slimmable_image_compression.git
 cd slimmable_image_compression
-
-#install yolov3 followed [YOLOv3](https://github.com/eriklindernoren/PyTorch-YOLOv3)
-#install CompressAI followed [CompressAI](https://github.com/InterDigitalInc/CompressAI)
 ```
+Install yolov3 followed [YOLOv3](https://github.com/eriklindernoren/PyTorch-YOLOv3)  
+Install CompressAI followed [CompressAI](https://github.com/InterDigitalInc/CompressAI)
+
 2. Dataset preparation 
 You can download COCO2014 dataset from [HERE](https://cocodataset.org/#download) and annotated it followed [YOLOv3](https://github.com/eriklindernoren/PyTorch-YOLOv3)
 
 3. Train  
-
-4. Evaluation
+```
+CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4 --master_port 29303 train_hyper_DDP.py --checkpoint checkpoint.pth.tar
+```
 
 # Citing
 If you use our work in your research or wish to refer to the baseline results published here, please use the following BibTeX entries:  
