@@ -7,16 +7,26 @@ Slimmable Multi-Task Image Compression for Human and Machine Vision
 In the Internet of Things (IoT) communications, visual data is frequently processed among intelligent devices using artificial intelligence algorithms, replacing humans for analyzing and
 decision-making while only occasionally requiring human’s scrutiny. However, due to high redundancy of compressive encoders, existing image coding solutions for machine vision are not efficient at runtime. To balance the rate-accuracy performance and efficiency of image compression for machine vision while attaining high-quality reconstructed images for human vision, this paper introduces a novel slimmable multi-task compression framework for human and machine vision in visual IoT applications. Firstly, the image compression for human and machine vision under the constraint of bandwidth, latency, computational resources are modelled as a multi-task optimization problem. Secondly, slimmable encoders are employed to multiple human and machine vision tasks in which the parameters of the sub-encoder for machine vision tasks are shared among all tasks and jointly learned. Thirdly, to solve the feature match between latent representation and intermediate features of deep vision networks, feature transformation networks are introduced as decoders of machine vision feature compression. Finally, the proposed framework is successfully applied to human and machine vision tasks’ scenarios, e.g., object detection and image reconstruction. Experimental results show that the proposed method outperforms baselines and other image compression approaches on machine vision tasks with higher efficiency (shorter latency) in two vision tasks’ scenarios while retaining comparable quality on image reconstruction.  
 # Installation
-The codebases are built on top of [CompressAI](https://github.com/InterDigitalInc/CompressAI) , [Slimmabe Networks](https://github.com/JiahuiYu/slimmable_networks) and [YOLOv3](https://github.com/ultralytics/yolov3/tree/master).
+The codebases are built on top of [CompressAI](https://github.com/InterDigitalInc/CompressAI) , [Slimmabe Networks](https://github.com/JiahuiYu/slimmable_networks) and [YOLOv3](https://github.com/eriklindernoren/PyTorch-YOLOv3).
 ### Requirements
-- Linux or macOS with Python ≥ 3.6    
-- PyTorch ≥ 1.5 and torchvision that matches the PyTorch installation. You can install them together at pytorch.org to make sure of this   
+- Linux or macOS with Python ≥ 3.7    
+- PyTorch ≥ 1.7 and torchvision that matches the PyTorch installation. You can install them together at pytorch.org to make sure of this   
 ### Steps
 1. Install and build libs  
+```
+# install 
+git clone 
+cd slimmable_image_compression
 
-2. Load COCO2014 dataset follow here  
+#install yolov3 followed [YOLOv3](https://github.com/eriklindernoren/PyTorch-YOLOv3)
+#install CompressAI followed [CompressAI](https://github.com/InterDigitalInc/CompressAI)
+```
+2. Dataset preparation 
+You can download COCO2014 dataset from [HERE](https://cocodataset.org/#download) and annotated it followed [YOLOv3](https://github.com/eriklindernoren/PyTorch-YOLOv3)
 
 3. Train  
+
+4. Evaluation
 
 # Citing
 If you use our work in your research or wish to refer to the baseline results published here, please use the following BibTeX entries:  
