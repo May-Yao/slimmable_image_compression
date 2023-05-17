@@ -13,13 +13,14 @@ The codebases are built on top of [CompressAI](https://github.com/InterDigitalIn
 - PyTorch ≥ 1.7 and torchvision that matches the PyTorch installation. You can install them together at pytorch.org to make sure of this   
 ### Steps
 1. Install and build libs  
-(1) Install this project
+(1) Install yolov3 according to [YOLOv3](https://github.com/eriklindernoren/PyTorch-YOLOv3) and modifiy the file PyTorchYOLOv3/pytorchyolo/model.py    
+(2) Install CompressAI according to [CompressAI](https://github.com/InterDigitalInc/CompressAI)  
+(3) Install this project  
 ```
 git clone https://github.com/May-Yao/slimmable_image_compression.git
 cd slimmable_image_compression
 ```  
-(2) Install yolov3 according to [YOLOv3](https://github.com/eriklindernoren/PyTorch-YOLOv3) and modifiy the file PyTorchYOLOv3/pytorchyolo/model.py.   
-(3) Install CompressAI according to [CompressAI](https://github.com/InterDigitalInc/CompressAI).
+
 
 2. Dataset preparation 
 You can download COCO2014 dataset from [HERE](https://cocodataset.org/#download) and annotated it according to [YOLOv3](https://github.com/eriklindernoren/PyTorch-YOLOv3)
