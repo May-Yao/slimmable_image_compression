@@ -32,8 +32,8 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node
 Training algorithms:  
 ![image](https://github.com/May-Yao/slimmable_image_compression/blob/main/Training_algorithms.png)
 
-4.Results  
-Object Detection:  
+4. Results  
+Object detection:  
 ![image](https://github.com/May-Yao/slimmable_image_compression/blob/main/Object_detection.png)
 
 Image reconstruction:  
