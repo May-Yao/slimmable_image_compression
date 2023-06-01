@@ -30,7 +30,7 @@ You can download COCO2014 dataset from [HERE](https://cocodataset.org/#download)
 CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4 --master_port 29303 train_hyper_DDP.py --checkpoint checkpoint.pth.tar
 ```
 Training algorithms:  
-![image](https://github.com/May-Yao/slimmable_image_compression/blob/main/Training_algorithm.png)
+![image](https://github.com/May-Yao/slimmable_image_compression/blob/main/Training_algorithms.png)
 
 4.Results  
 Object Detection:  
